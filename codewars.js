@@ -1,7 +1,9 @@
 //daily codewars practice - each challenge is solved on codewars and then pushed to GitHub so I can see my daily wins!//
 
 
-//The challenge 8kyu// 
+// ==================================================
+// 2026-09-30 | Return Negative | 8kyu
+// ==================================================
 /* In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 
 Examples
