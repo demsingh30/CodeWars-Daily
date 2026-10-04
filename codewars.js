@@ -1,14 +1,20 @@
 // ==================================================
-// 2026-10-02 | Opposite Number | 8kyu
+// 2026-10-03 | Sum of Positive | 8kyu
 // ==================================================
-/* Very simple, given a number, find its opposite (additive inverse). */
+/* You get an array of numbers, return the sum of all of the positive ones.
+   Example: [1, -4, 7, 12] => 1 + 7 + 12 = 20
+   Note: If there is nothing to sum, the sum is default to 0. */
 
-function opposite(number) {
-  if (number > 0) {
-    return -Math.abs(number)
-}
-  else {
-    return Math.abs(number)
-}
+
+
+function positiveSum(arr) {
+  return arr.filter(function(num) {
+    return num >= 0
+  })
+
+  .reduce (function (total,num) {
+      return total + num 
+  } ,
+  0)
 }
 
