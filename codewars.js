@@ -1,20 +1,21 @@
 // ==================================================
-// 2026-10-03 | Sum of Positive | 8kyu
+// 2026-10-04 | Generate Range of Integers | 8kyu
 // ==================================================
-/* You get an array of numbers, return the sum of all of the positive ones.
-   Example: [1, -4, 7, 12] => 1 + 7 + 12 = 20
-   Note: If there is nothing to sum, the sum is default to 0. */
+/* Implement the function generateRange which takes three arguments (start, stop, step)
+   and returns the range of integers from start to stop (inclusive) in increments of step.
+   Examples:
+   (1, 10, 1)  -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+   (-10, 1, 1) -> [-10, -9, ..., 0, 1]
+   (1, 15, 20) -> [1]
+   Note: start < stop, step > 0 */
 
 
 
-function positiveSum(arr) {
-  return arr.filter(function(num) {
-    return num >= 0
-  })
-
-  .reduce (function (total,num) {
-      return total + num 
-  } ,
-  0)
+function generateRange(start, stop, step) {
+  let array = []
+ for (let i = start; i <= stop; i +=step) {
+  array.push(i) }
+  return array
 }
+
 
