@@ -1,21 +1,22 @@
-// ==================================================
-// 2026-10-04 | Generate Range of Integers | 8kyu
-// ==================================================
-/* Implement the function generateRange which takes three arguments (start, stop, step)
-   and returns the range of integers from start to stop (inclusive) in increments of step.
-   Examples:
-   (1, 10, 1)  -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-   (-10, 1, 1) -> [-10, -9, ..., 0, 1]
-   (1, 15, 20) -> [1]
-   Note: start < stop, step > 0 */
 
+// Smash (8 kyu): join an array of words into one sentence. The point of this exercise was to do loops. 
 
+function smash(words) {
+  let sentence = ""
 
-function generateRange(start, stop, step) {
-  let array = []
- for (let i = start; i <= stop; i +=step) {
-  array.push(i) }
-  return array
+  for (let i = 0; i < words.length; i++) {
+    if (i === 0) {
+      sentence = sentence + words[i]
+    } else {
+      sentence = sentence + " " + words[i]
+    }
+  }
+
+  return sentence
 }
+
+console.log(smash(["hi", "i'm", "elfo"])) // hi i'm elfo
+
+
 
 
