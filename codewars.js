@@ -1,27 +1,16 @@
 
 // ============================================================
-// 2026-10-06 | Count by X | 8kyu
+// 2026-10-07 | Remove First and Last Character | 8kyu |
 // ============================================================
+//Task
+//Your goal is to write a function that removes the first and last characters of a string. You're given one parameter, the original string.
+//Important: Your function should handle strings of any length ≥ 2 characters. For strings with exactly 2 characters, return an empty string.
 
-/*
-Create a function with two arguments that will return an array of the first n multiples of x.
-
-Assume both the given number and the number of times to count will be positive numbers greater than 0.
-
-Return the results as an array or list ( depending on language ).
-
-Examples
-x = 1, n = 10 --> [1,2,3,4,5,6,7,8,9,10]
-x = 2, n = 5  --> [2,4,6,8,10]
-*/
-
-
-function multiply( x, n) {
-  const array = []
-  for (let i = 1; i <= n; i++) {
-    array.push(x * i)
-  }
-  return array
+function removeChar(str){
+ if (str.length > 2) {
+   return (str.slice(1,str.length -1))
 }
-
-
+else {
+    return("")
+}
+}
