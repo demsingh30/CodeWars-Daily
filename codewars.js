@@ -1,16 +1,16 @@
+// ==============================================
+// 2026-10-09 | Counting Sheep | 8kyu
+// ==============================================
+/*
+Consider an array/list of sheep where some sheep may be
+missing from their place. We need a function that counts
+the number of sheep present in the array (true means present).
+*/
 
-// ============================================================
-// 2026-10-07 | Remove First and Last Character | 8kyu |
-// ============================================================
-//Task
-//Your goal is to write a function that removes the first and last characters of a string. You're given one parameter, the original string.
-//Important: Your function should handle strings of any length ≥ 2 characters. For strings with exactly 2 characters, return an empty string.
-
-function removeChar(str){
- if (str.length > 2) {
-   return (str.slice(1,str.length -1))
-}
-else {
-    return("")
-}
+function countSheeps(sheep) {
+  let counter = 0;
+  for (const sheeps of sheep) {
+    if (sheeps === true) counter += 1;
+  }
+  return counter;
 }
