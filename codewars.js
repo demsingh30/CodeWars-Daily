@@ -1,16 +1,14 @@
 // ==============================================
-// 2026-10-09 | Counting Sheep | 8kyu
+// 2026-10-14 | Reversal | 8kyu
 // ==============================================
-/*
-Consider an array/list of sheep where some sheep may be
-missing from their place. We need a function that counts
-the number of sheep present in the array (true means present).
-*/
+// Kata: pro wrestling commentator (who won the reversal chain)
+// Input: "A hit a reversal to B hit a reversal to A"
+// The last name is the one reversed, so the winner is the 6th word from the end.
 
-function countSheeps(sheep) {
-  let counter = 0;
-  for (const sheeps of sheep) {
-    if (sheeps === true) counter += 1;
-  }
-  return counter;
+function whowon(s) {
+  const words = s.split(" ");
+  return words[words.length - 6];
 }
+
+console.log(whowon("A hit a reversal to B"));                         // A
+console.log(whowon("A hit a reversal to B hit a reversal to A"));     // B
