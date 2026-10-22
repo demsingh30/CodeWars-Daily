@@ -1,24 +1,23 @@
 // ==============================================
-// 2026-10-20 |  | 7kyu
+// 2026-10-21 |  | 7kyu
 // ==============================================
-// Vowel Count (7 kyu)
+// Disemvowel Trolls(7 kyu)
 //Return the number (count) of vowels in the given string.
 
 
-
-function getCount(str) {
-str.split("")
-count = 0
-for (i=0; i < str.length; i++) {
-  if (str[i] === 'a' ||  str[i] === 'e' ||  str[i] === 'i' ||  str[i] === 'o' ||  str[i] === 'u') 
-  {
-     count++
+ 
+function disemvowel(str) {
+  let result = ''
+  for (let i = 0; i < str.length; i++) {
+    if (!'aeiou'.includes(str[i].toLowerCase())) {
+      result += str[i]
+    }
   }
+  return result
+}
+ 
 
-}
-return count
-}
-console.log(getCount("hello"))
+ 
 
 
    
