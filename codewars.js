@@ -1,20 +1,21 @@
 // ==============================================
-// 2026-10-21 |  | 7kyu
+// 2026-10-22 |  | 7kyu
 // ==============================================
-// Disemvowel Trolls(7 kyu)
-//Return the number (count) of vowels in the given string.
+//Highest and Lowest (7 kyu)
 
 
- 
-function disemvowel(str) {
-  let result = ''
-  for (let i = 0; i < str.length; i++) {
-    if (!'aeiou'.includes(str[i].toLowerCase())) {
-      result += str[i]
-    }
-  }
-  return result
-}
+
+function highAndLow(numbers) {
+ const array = numbers.split(" ")
+
+const newArray = array.map(function(item) {
+  return Number(item)
+})
+ const small = Math.min(...newArray)
+ const big = Math.max(...newArray)
+ return (`${big} ${small}`)
+ }
+
  
 
  
