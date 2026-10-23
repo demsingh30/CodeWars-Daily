@@ -1,22 +1,25 @@
 // ==============================================
 // 2026-10-22 |  | 7kyu
 // ==============================================
-//Highest and Lowest (7 kyu)
+//Find the Middle (7 kyu)
 
 
 
-function highAndLow(numbers) {
- const array = numbers.split(" ")
+function getMiddle (s) {
 
-const newArray = array.map(function(item) {
-  return Number(item)
-})
- const small = Math.min(...newArray)
- const big = Math.max(...newArray)
- return (`${big} ${small}`)
- }
+const middle = Math.floor( s.length / 2 )
 
- 
+s.slice(middle, middle +1)
+
+if (s.length % 2 === 0) {
+    return 	s.slice(middle - 1, middle + 1) 
+} else {
+    return s.slice(middle, middle +1) 
+}
+}
+
+
+
 
  
 
