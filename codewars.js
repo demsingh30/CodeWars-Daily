@@ -1,21 +1,15 @@
 // ==============================================
-// 2026-10-22 |  | 7kyu
+// 2026-10-23 |  | 8kyu
 // ==============================================
-//Find the Middle (7 kyu)
+//Beginner- Lost without a Map 
 
 
 
-function getMiddle (s) {
-
-const middle = Math.floor( s.length / 2 )
-
-s.slice(middle, middle +1)
-
-if (s.length % 2 === 0) {
-    return 	s.slice(middle - 1, middle + 1) 
-} else {
-    return s.slice(middle, middle +1) 
-}
+function maps (x) {
+let modified = x.map(function(num) {
+return num * 2
+})
+return modified
 }
 
 
