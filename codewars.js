@@ -1,17 +1,13 @@
 // ==============================================
-// 2026-10-23 |  | 8kyu
+// 2026-10-24 |  | 8kyu
 // ==============================================
-//Beginner- Lost without a Map 
+//Convert Boolean to a String 
 
 
 
-function maps (x) {
-let modified = x.map(function(num) {
-return num * 2
-})
-return modified
+function booleanToString(b){
+  return b.toString();
 }
-
 
 
 
