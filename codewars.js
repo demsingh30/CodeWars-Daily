@@ -1,13 +1,14 @@
 // ==============================================
-// 2026-10-24 |  | 8kyu
+// 2026-10-28 |  | 8kyu
 // ==============================================
-//Convert Boolean to a String 
+//Debugging 
 
 
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
 
-function booleanToString(b){
-  return b.toString();
-}
+//the debugging in this was that the variable assignment was wrong. it used == not = to assign. fixed the bug! 
 
 
 
