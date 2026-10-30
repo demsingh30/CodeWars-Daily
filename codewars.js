@@ -1,14 +1,17 @@
 // ==============================================
-// 2026-10-28 |  | 8kyu
+// 2026-10-29 |  | 8kyu
 // ==============================================
-//Debugging 
+// Terminal game move function
+//In this game, the hero moves from left to right. The player rolls the die and moves the number of spaces indicated by the die two times.
+
+//Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
 
 
-var a = "code";
-var b = "wa.rs";
-var name = a + b;
+function move (position, roll) {
+  return roll * 2 + position 
+}
 
-//the debugging in this was that the variable assignment was wrong. it used == not = to assign. fixed the bug! 
+
 
 
 
