@@ -1,16 +1,14 @@
 // ==============================================
-// 2026-10-29 |  | 8kyu
+// 2026-10-31|  | 8kyu
 // ==============================================
-// Terminal game move function
-//In this game, the hero moves from left to right. The player rolls the die and moves the number of spaces indicated by the die two times.
-
-//Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
+// Write a function that checks if a given string (case insensitive) is a palindrome.
+//A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards, such as madam or racecar.
 
 
-function move (position, roll) {
-  return roll * 2 + position 
+function isPalindrome(x) {
+  const y = x.split("").reverse().join("")
+  return y.toLowerCase() === x.toLowerCase()
 }
-
 
 
 
