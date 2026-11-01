@@ -1,13 +1,18 @@
 // ==============================================
-// 2026-10-31|  | 8kyu
+// 2026-11-1|  | 8kyu
 // ==============================================
-// Write a function that checks if a given string (case insensitive) is a palindrome.
-//A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards, such as madam or racecar.
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
 
-function isPalindrome(x) {
-  const y = x.split("").reverse().join("")
-  return y.toLowerCase() === x.toLowerCase()
+function squareSum(numbers){
+  let newArray = numbers.map(function(element) {
+    return element ** 2})
+
+
+  let anotherArray = newArray.reduce(function (acc, c) {
+    return acc + c
+ }, 0)
+ return anotherArray
 }
 
 
