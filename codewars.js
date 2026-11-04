@@ -1,12 +1,18 @@
 // ==============================================
-// 2026-11-2|  | 8kyu
+// 2026-11-3|  | 8kyu
 // ==============================================
-// Function 2- hello world 
+// Double Char
 
-function greet() {
-    return "hello world!";
-    }
+function doubleChar(str) {
+   let newString = ''
+  for(let char of str) {
+   newString += char.repeat(2)
+ }
+  return newString
+}
 
+
+console.log(doubleChar('abcd'))
 
 
 
