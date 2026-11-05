@@ -1,12 +1,11 @@
 // ==============================================
-// 2026-11-4|  | 7kyu
+// 2026-11-5|  | 8kyu
 // ==============================================
-// Square Root Numbers
+// round down
 
-var isSquare = function(x){
-   isInteger(Math.sqrt(x))
+function litres(time) {
+  return Math.floor(time * .5);
 }
-
 
 
 
