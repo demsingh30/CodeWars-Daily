@@ -1,18 +1,17 @@
 // ==============================================
-// 2026-11-3|  | 8kyu
+// 2026-11-4|  | 7kyu
 // ==============================================
-// Double Char
+// Square Root Numbers
 
-function doubleChar(str) {
-   let newString = ''
-  for(let char of str) {
-   newString += char.repeat(2)
- }
-  return newString
-}
-
-
-console.log(doubleChar('abcd'))
+var isSquare = function(x){
+  const mathy = Math.sqrt(x) 
+    if (Number.isInteger(mathy)) {
+      return true 
+    }
+    else {
+      return false
+    }
+  }
 
 
 
