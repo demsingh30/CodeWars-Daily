@@ -1,10 +1,9 @@
 // ==============================================
-// 2026-11-5|  | 8kyu
+// 2026-11-7|  | 8kyu
 // ==============================================
-// round down
-
-function litres(time) {
-  return Math.floor(time * .5);
+// practice to Upper Case
+function makeUpperCase(str) {
+  return str.toUpperCase()
 }
 
 
