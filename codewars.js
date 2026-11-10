@@ -1,15 +1,26 @@
 // ==============================================
-// 2026-11-8|  | 8kyu
+// 2026-11-9|  | 8kyu
 // ==============================================
-// if even multiply by 8 else multiply by 9
-function simpleMultiplication(number) {
-    if (number % 2 === 0) {
-      return number * 8
-}
-  else {
-return number * 9 }
-}
+/* Task:
+Given a list of integers, determine whether the sum of its elements is odd or even.
 
+Give your answer as a string matching "odd" or "even".
+
+If the input array is empty consider it as: [0] (array with a zero).
+*/
+
+function oddOrEven(array) {
+let newArray = array.reduce(function (total, item) {
+   return total + item
+}, 0)
+
+if (newArray % 2 === 0) {
+  return "even"
+}
+else {
+  return "odd"
+}
+}
 
 
  
