@@ -1,25 +1,27 @@
 // ==============================================
-// 2026-11-9|  | 8kyu
+// 2026-11-10|  | 7kyu
 // ==============================================
 /* Task:
-Given a list of integers, determine whether the sum of its elements is odd or even.
+Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
 
-Give your answer as a string matching "odd" or "even".
+For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
 
-If the input array is empty consider it as: [0] (array with a zero).
+Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
+
+Note: The function accepts a non-negative integer and returns an integer.
+
+Happy Coding!
+
+
 */
 
-function oddOrEven(array) {
-let newArray = array.reduce(function (total, item) {
-   return total + item
-}, 0)
-
-if (newArray % 2 === 0) {
-  return "even"
-}
-else {
-  return "odd"
-}
+function squareDigits(num) {
+ let array = String(num).split("")
+ let newValue = ''
+ for (const value of array) {
+  newValue += value ** 2 
+ }
+return Number(newValue)
 }
 
 
