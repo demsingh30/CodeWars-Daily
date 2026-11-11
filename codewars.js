@@ -1,29 +1,28 @@
 // ==============================================
-// 2026-11-10|  | 7kyu
+// 2026-11-11|  | 7kyu
 // ==============================================
 /* Task:
-Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
-For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
 
-Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
-
-Note: The function accepts a non-negative integer and returns an integer.
-
-Happy Coding!
 
 
 */
 
-function squareDigits(num) {
- let array = String(num).split("")
- let newValue = ''
- for (const value of array) {
-  newValue += value ** 2 
- }
-return Number(newValue)
+function XO(str) {
+   let string =  str.toLowerCase() 
+   let countone = 0
+   let counttwo = 0
+   for (const char of string) {
+    if (char === 'x') {
+     countone++
+    }
+    else if (char === 'o') {
+      counttwo++
+    }
+   }
+ return countone === counttwo
 }
-
 
  
 
